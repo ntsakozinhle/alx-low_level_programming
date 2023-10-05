@@ -7,7 +7,6 @@
  */
 int main(void)
 {
-	int printf(const char *format, ...) 
 	printf("Size of a char: %c byte(s)"), sizeof(char);
 	printf("size of int: %i byte(s)"), sizeof(int);
 	printf("size of long int: %lu byte(s)"), sizeof(long int);
