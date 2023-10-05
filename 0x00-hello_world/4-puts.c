@@ -1,5 +1,3 @@
-// Write a C program that prints exactly using puts function
-
 #include <stdio.h>
 
 /**
