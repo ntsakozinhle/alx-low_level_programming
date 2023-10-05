@@ -8,8 +8,8 @@
 
 int main(void)
 {
-	printf(const char *format, ...);
-	printf("with proper grammar, but the outcome is a piece of art,%n");
+	int printf(const char *format, %n);
+	printf("with proper grammar, but the outcome is a piece of art, %n");
 
 	return (0);
 }
