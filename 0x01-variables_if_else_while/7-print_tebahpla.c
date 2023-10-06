@@ -12,7 +12,7 @@ int main(void)
 {
 	char ahpla;
 
-	for (ahpla = 'a' ; ahpla >= 'z' ; ahpla--)
+	for (ahpla = 'z' ; ahpla <= 'a' ; ahpla++)
 		putchar(ahpla);
 
 	putchar('\n');
