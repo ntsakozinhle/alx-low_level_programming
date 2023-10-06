@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * main - is the function
+ * main - printing without printf and puts
  *
- * Return - Always 1 (success)
- *
+ * Return: always (1)
  */
 int main(void)
 {
