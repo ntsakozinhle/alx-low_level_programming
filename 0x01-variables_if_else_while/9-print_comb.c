@@ -15,7 +15,6 @@ int main(void)
 
 	{
 		putchar(a + '0');
-		putchar('\n');
 
 		if (a != 9)
 		{
@@ -23,6 +22,6 @@ int main(void)
 			putchar(' ');
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
