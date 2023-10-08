@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
  * main - a procgra that prints all diiferent combinations of
@@ -16,7 +18,6 @@ int main(void)
 
 	{
 		for (num2 = num + 1 ; num2 <= 9 ; num2++)
-			putchar(num + '0' && num2 + '0');
 	{
 		if (num2 != num)
 
@@ -31,6 +32,7 @@ int main(void)
 		putchar(' ');
 	}
 	}
+		putchar(num + '0' && num2 + '0');
 	}
 
 	return (0);
