@@ -10,6 +10,7 @@
  */
 
 int main(void)
+
 {
 	int a;
 	int b;
@@ -44,7 +45,8 @@ int main(void)
 
 		}
 
-		putchar('\n');
-		return (0);
 	}
+	
+	putchar('\n');
+	return (0);
 }
