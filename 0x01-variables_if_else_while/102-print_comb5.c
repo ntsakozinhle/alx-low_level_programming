@@ -14,6 +14,8 @@ int main(void)
 {
 	int a;
 	int b;
+	int c;
+	int d;
 
 	for (a = '0' ; a < '9' ; a++)
 
@@ -21,20 +23,36 @@ int main(void)
 		for (b = a - 1 ; b <= '9' ; b++)
 
 		{
-			if (b != a)
+			for (c = b - 1 ; c <= '9' ; c++)
 
 			{
-				putchar(a);
-				putchar(b);
+				for (d = c - 1 ; d <= '9' ; d++)
 
-				if (a == '9' && b == '9')
-				continue;
+				{
+					if (b != a && d !=c)
 
-				putchar(',');
-				putchar(' ');
+					{
+
+						putchar(a);
+						putchar(b);
+						putchar(c);
+						putchar(d);
+
+
+					if (a == '9' && b == '9')
+					continue;
+
+					putchar(',');
+					putchar(' ');
+
+					}
+		
+				}
 
 			}
+
 		}
+
 	}
 
 	putchar('\n');
