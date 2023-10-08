@@ -30,6 +30,7 @@ int main(void)
 		putchar(' ');
 	}
 	}
+		putchar(num + '0' && num2 +'0');
 	}
 
 	return (0);
