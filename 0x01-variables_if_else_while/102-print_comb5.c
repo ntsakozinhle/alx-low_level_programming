@@ -19,14 +19,14 @@ int main(void)
 
 	for (a = '0' ; a < '9' ; a++)
 	{
-		for (b = a + '0' ; b <= '9' ; b++)
+		for (b = a + '1' ; b <= '9' ; b++)
 		putchar(' ');
 		{
-			for (c = b + '0' ; c <= '9' ; c++)
+			for (c = b + '1' ; c <= '9' ; c++)
 			{
-				for (d = c + '0' ; d <= '9' ; d++)
+				for (d = c + '1' ; d <= '9' ; d++)
 				{
-					if (b != a && d !=c)
+					if (b != a && d != c)
 					{
 						putchar(a);
 						putchar(b);
