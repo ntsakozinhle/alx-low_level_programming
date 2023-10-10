@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "main.h"
+#include "main.c"
 
 /**
  * main - write a program that prints the alphabet
