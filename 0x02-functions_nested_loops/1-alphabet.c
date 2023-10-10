@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.c"
+#include "main.h"
 
 /**
  * main - write a program that prints the alphabet
@@ -8,19 +7,9 @@
  * Return: Always 0
  */
 
-void print_alphabet(void)
-
-{
-	int a;
-
-	for (a = 'a'; a <= 'z' ; a++)
-	putchar(a);
-}
-
 int main(void)
 
 {
 	print_alphabet();
-	putchar('\n');
 	return (0);
 }
