@@ -1,14 +1,7 @@
 #include <stdio.h>
-  
-/**
- * main.h prototype file
- *
- */
-void print_alphabet(void)
-{
-	int a;
+#ifndef main_h
+#define main_h
 
-	for (a = 'a'; a <= 'z' ; a++)
-		putchar(a);
-	putchar('\n');
-}
+void print_alphabet(void);
+
+#endif
