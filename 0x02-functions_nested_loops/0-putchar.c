@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "main.h"
 
 /**
  * main - a program that prints _putchar, followed by a new line
@@ -15,7 +16,7 @@ int main(void)
 	while (str[i] != '\0')
 
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i++;
 	}
 
