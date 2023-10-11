@@ -16,18 +16,38 @@ void print_times_table(int n)
 	int s;
 	int result;
 
-	for (t = n ; t < 15 ; t++)
+	if (n >= 0 && n <= 15)
 	{
-		for (s = 0 ; s < 15 ; s++)
+		for (t = 0; t <= n ; t++)
 		{
-			result = t * s;
+			_putchar('0');
 
-			if (!(n > 15) || (n < 0))
+			for (s = 1; s <= n; s++)
 			{
-				printf("%2d, ", result);
+				_putchar(',');
+				_putchar(' ');
 
+				result = t * s;
+
+				if (result <= 99)
+					_putchar(' ');
+
+				if (result <= 9)
+					_putchar(' ');
+
+				if (result >= 100)
+				{
+					_putchar((result / 100) + '0');
+					_putchar(((result / 10)) % 10 + '0');
+				}
+				else if (result <= 99 && result >= 10)
+
+				{
+					_putchar((result / 10) + '0');
+				}
+				_putchar((result % 10) + '0');
 			}
+			_putchar('\n');
 		}
-		printf("\n");
 	}
 }
