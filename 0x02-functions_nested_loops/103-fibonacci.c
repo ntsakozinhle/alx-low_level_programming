@@ -9,11 +9,11 @@
 
 int main(void)
 {
-	long int max = 4000000;
-	long int fib1 = 1;
-	long int fib2 = 2;
-	long int fibo;
-	long int nacci = 2;
+	int max = 4000000;
+	int fib1 = 1;
+	int fib2 = 2;
+	int fibo;
+	int nacci = 2;
 
 	while (fibo <= max)
 	{
@@ -25,6 +25,6 @@ int main(void)
 		fib1 = fib2;
 		fib2 = fibo;
 	}
-	printf("%li\n", nacci);
+	printf("%d\n", nacci);
 	return (0);
 }
