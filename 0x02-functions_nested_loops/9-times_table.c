@@ -20,6 +20,8 @@ void times_table(void)
 		{
 			result = a * b;
 			printf("%d", result);
+			_putchar(',');
+			_putchar(' ');
 		}
 	}
 	printf("\n");
