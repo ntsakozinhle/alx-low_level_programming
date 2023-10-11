@@ -8,16 +8,16 @@
  */
 int main(void)
 {
-	int fib1 = 1;
-	int fib2 = 2;
-	int fibs;
+	long int fib1 = 1;
+	long int fib2 = 2;
+	long int fibs;
 	int p;
 
-	printf("%d, ", fib1);
+	printf("%li, ", fib1);
 
 	for (p = 1; p < 50 ; p++)
 	{
-		printf("%d, ", fib2);
+		printf("%li, ", fib2);
 
 		fibs = fib1 + fib2;
 
