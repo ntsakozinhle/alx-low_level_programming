@@ -12,8 +12,8 @@
 
 int print_last_digit(int b)
 {
-	int m = b * 10;
+	int m = b % 10;
 
-	_putchar(m);
+	printf("%d", m);
 	return (0);
 }
