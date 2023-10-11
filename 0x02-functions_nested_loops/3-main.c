@@ -18,5 +18,5 @@ int main(void)
 	r = _islower(108);
 	putchar(r + '0');
 	putchar('\n');
-	return (0);
+	return (0)
 }
