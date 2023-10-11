@@ -10,8 +10,8 @@
 int main(void)
 {
 	unsigned long int a = 1;
-	unsigned long int b = 2;
-	int c;
+	unsigned long int b = 1;
+	unsigned long int c;
 	int fib;
 
 	printf("%lu, ", a);
@@ -23,7 +23,7 @@ int main(void)
 		c = a + b;
 
 		a = b;
-		b = a;
+		b = c;
 
 		if (fib != 97)
 			printf(", ");
