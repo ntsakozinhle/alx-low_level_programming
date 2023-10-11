@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int a = 1;
 	unsigned long int b = 2;
 	unsigned long int sum;
-	unsigned long int fib;
+	int fib;
 
 	printf("%lu, ", a);
 
