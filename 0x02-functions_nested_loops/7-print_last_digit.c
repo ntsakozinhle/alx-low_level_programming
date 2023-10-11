@@ -13,10 +13,14 @@
 
 int print_last_digit(int b)
 {
-	int m = b % 10;
+	int m;
 
-	{
-		printf("%d", m);
-		return (0);
-	}
+	m = b % 10;
+
+	if (b < 0)
+		m = -m;
+	_putchar(m + '0');
+
+	return (m);
+
 }
