@@ -19,10 +19,20 @@ void times_table(void)
 		for (b = 0; b < 10 ; b++)
 		{
 			result = a * b;
-			printf("%d", result);
-			_putchar(',');
-			_putchar(' ');
+
+			if (b == 0)
+				printf("%d, ", result);
+
+			else
+			{
+				printf("%2d", result);
+
+				if (b != 9)
+					printf(", ");
+			}
+
 		}
+		printf("\n");
 	}
-	printf("\n");
+
 }
