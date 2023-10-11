@@ -17,12 +17,15 @@ int main(void)
 
 	for (p = 1; p < 50 ; p++)
 	{
-		printf("%li, ", fib2);
+		printf("%li", fib2);
 
 		fibs = fib1 + fib2;
 
 		fib1 = fib2;
 		fib2 = fibs;
+
+		if (p != 49)
+			printf(", ");
 	}
 	printf("\n");
 	return (0);
