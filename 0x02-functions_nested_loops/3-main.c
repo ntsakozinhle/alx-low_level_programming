@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
@@ -9,14 +8,14 @@
 
 int main(void)
 {
-	int r;
+	int x;
 
-	r = _islower('H');
-	putchar(r + '0');
-	r = _islower('o');
-	putchar(r + '0');
-	r = _islower(108);
-	putchar(r + '0');
-	putchar('\n');
+	x = _islower('H');
+	_putchar(x + '0');
+	x = _islower('o');
+	_putchar(x + '0');
+	x = _islower(108);
+	_putchar(x + '0');
+	_putchar('\n');
 	return (0);
 }
