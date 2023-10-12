@@ -18,17 +18,16 @@ void print_diagonal(int n)
 
 	else
 	{
-		int p;
-		int q;
+		int p, q;
 
-		for (p = 0; p < n ; p++)
+		for (p = 0 ; p < n ; p++)
 		{
 			for (q = 0 ; q < p ; q++)
 			{	
 				_putchar(' ');
 			}
 			_putchar('\\');
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
 }
