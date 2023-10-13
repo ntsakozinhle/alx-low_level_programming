@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_numbers - a function that prints an integar
+ * print_number - a function that prints an integar
  *
  * @n: parameter to be checked
  *
