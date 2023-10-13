@@ -4,7 +4,7 @@
  * main - a program that finds the largest prime factor
  * followed by new line
  *
- * return: 0
+ * Return: Always 0
  */
 
 int main(void)
