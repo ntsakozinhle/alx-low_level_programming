@@ -13,21 +13,12 @@
 void print_rev(char *s)
 {
 	int x;
-	int y;
+	int count = 0;
 
-	for (x = 0 ; x < s ; x++)
-	{
+	for (x = 0 ; s[x] != '\0' ; x++)
+		count++;
+	for (x = count - 1 ; x >= 0 ; x--)
 		_putchar(s[x]);
-
-		char ver;
-
-		for (y = 0 ; x < y ; x++)
-		{
-			ver = s[x];
-			s[x] = s[y];
-			s[y] = ver;
-			y--
-		}
-	}
 	_putchar('\n');
+
 }
