@@ -12,6 +12,7 @@
 
 char *cap_string(char *cap)
 {
+	char c[] = {44, 59, 46, '!', '?', '"', '(', ')', '{', '}', ' ', '\t', '\n'};
 	int a;
 	int b;
 
@@ -24,7 +25,7 @@ char *cap_string(char *cap)
 
 		for (b = 0 ; b < 13 ; b++)
 		{
-			if (cap[a - 1] == cap[b] && islower((unsigned char)cap[a]))
+			if (cap[a - 1] == c[b] && islower((unsigned char)cap[a]))
 			{
 				cap[a] = toupper((unsigned char)cap[a]);
 			}
