@@ -13,28 +13,22 @@
 
 char *leet(char *deep)
 {
-	char *str = deep;
 	int b;
+	int d;
 
 	const char *leetChars = "aAeEoOtTlL";
-	const char *leetReplacements = "4433007711";
+	const char *leetReplace = "4433007711";
 
 	for (b = 0 ; deep[b] != '\0' ; b++)
 	{
-		char c = deep[b];
-
-		if (isalpha((unsigned char)c))
+		for (d = 0 ; leetChars[d] != '\0' ; d++)
 		{
-			const char *foundChar = strchr(leetChars, c);
-
-			if (foundChar != NULL)
+			if (deep[b] == leetChars[d])
 			{
-				char replacement = leetReplacements[foundChar - leetChars];
-
-				str[b] = replacement;
+				deep[b] = leetReplace[d];
 
 			}
 		}
 	}
-	return (str);
+	return (deep);
 }
