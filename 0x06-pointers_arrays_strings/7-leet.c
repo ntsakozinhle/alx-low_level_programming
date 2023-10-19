@@ -1,5 +1,8 @@
 #include "main.h"
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
 /**
  * leet - a code that encodes a string into 1337
  *
@@ -7,41 +10,29 @@
  *
  * Return: deep
  */
-char *leet(char *deep)
 
+char *leet(char *deep)
 {
 	char *str = deep;
 	int b;
 
+	const char *leetChars = "aAeEoOtTlL";
+	const char *leetReplacements = "4433007711";
+
 	for (b = 0 ; deep[b] != '\0' ; b++)
 	{
-		if ((deep[b] >= 'a' && deep[b] <= 'z') || (deep[b] >= 'A' && deep[b] <= 'Z'))
+		char c = deep[b];
+
+		if (isalpha((unsigned char)c))
 		{
-			char c = deep[b];
+			const char *foundChar = strchr(leetChars, c);
 
-			if (c == 'a' || c == 'A')
+			if (foundChar != NULL)
 			{
-				str[b] = '4';
-			}
+				char replacement = leetReplacements[foundChar - leetChars];
 
-			else if (c == 'e' || c == 'E')
-			{
-				str[b] = '3';
-			}
+				str[b] = replacement;
 
-			else if (c == 'o' || c == 'O')
-			{
-				str[b] = '0';
-			}
-
-			else if (c == 't' || c == 'T')
-			{
-				str[b] = '7';
-			}
-
-			else if (c == 'l' || c == 'L')
-			{
-				str[b] = '1';
 			}
 		}
 	}
