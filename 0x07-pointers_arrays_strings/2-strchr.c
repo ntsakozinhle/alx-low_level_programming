@@ -8,7 +8,7 @@
  * @s: parameter for memory pointer
  * @c: value to be store in pointer
  *
- * return: NULL
+ * Return: s
  */
 
 char *_strchr(char *s, char c)
@@ -23,7 +23,7 @@ char *_strchr(char *s, char c)
 	for (b = 0 ; s[b] != '\0' ; b++)
 	{
 		if (s[b] == c)
-			return &s[b];
+			return (&s[b]);
 	}
 
 	return (NULL);
