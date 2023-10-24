@@ -8,22 +8,29 @@
  * @s: parameter for memory pointer
  * @accept: parameter for values to be stored in memory pointer
  *
- * Return: s
+ * Return: count
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-	unsigned int count = 0;
+	char *ptr = accept;
 
-	if (s == NULL)
+	if (s == NULL || accept == NULL)
 	{
-		return (0);
+		return (NULL);
 	}
 
-	while (*s != '\0' && strchr(accept, *s) != NULL)
+	while (*s != '\0')
 	{
-		count++;
+		while (*ptr != '\0')
+		{
+			if (*s == *ptr)
+			{
+				return (s);
+			}
+			ptr++;
+		}
 		s++;
 	}
-	return (s);
+	return (NULL);
 }
