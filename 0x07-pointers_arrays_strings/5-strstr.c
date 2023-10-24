@@ -13,9 +13,6 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *find = needle;
-	char *in_a = haystack;
-
 	if (haystack == NULL || needle == NULL)
 	{
 		return (NULL);
@@ -23,6 +20,9 @@ char *_strstr(char *haystack, char *needle)
 
 	while (*haystack != '\0')
 	{
+		char *find = needle;
+		char *in_a = haystack;
+
 		while (*find != '\0' && *in_a == *find)
 		{
 			in_a++;
