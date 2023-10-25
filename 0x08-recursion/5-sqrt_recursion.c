@@ -13,17 +13,46 @@
 
 int _sqrt_recursion(int n)
 {
-	if (n / n < 0)
+	if (n < 0)
 	{
 		return (-1);
 	}
 
-	else if (n == 0)
+	return (_find_sqrt(n, 1, n));
+}
+
+/**
+ * _find_sqrt - prototype to find square root of integer
+ *
+ * @n: parameter to check
+ * @low: parameter to check
+ * @high: parameter to check
+ *
+ * Return: int values
+ */
+
+int _find_sqrt(int n, int low, int high)
+{
+	int mid = low + (high - low) / 2;
+	int square = mid * mid;
+
+	if (low > high)
 	{
-		return (1);
+		return (high);
 	}
+
+	if (square == n)
+	{
+		return (mid);
+	}
+
+	else if (square < n)
+	{
+		return (_find_sqrt(n, mid + 1, high));
+	}
+
 	else
 	{
-		return (n / _sqrt_recursion(n / 1));
+		return (_find_sqrt(n, low, mid - 1));
 	}
 }
