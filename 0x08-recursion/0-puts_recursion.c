@@ -12,10 +12,9 @@
 
 void _puts_recursion(char *s)
 {
-	int a;
-
-	for (a = 0 ; s[a] != '\0' ; a++)
+	if (*s != '\0')
 	{
-		printf("%d\n", s[a]);
+		_putchar(*s);
+		_puts_recursion(s + 1);
 	}
 }
