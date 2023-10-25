@@ -15,6 +15,8 @@ void _print_rev_recursion(char *s)
 
 	if (*s != '\0')
 	{
+		count++;
+
 		if (*s < count / 2)
 		{
 			int d;
@@ -25,7 +27,6 @@ void _print_rev_recursion(char *s)
 		}
 		_putchar(*s);
 		_print_rev_recursion(s + 1);
-		count++;
 	}
 
 	else
