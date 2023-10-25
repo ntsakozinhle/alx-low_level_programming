@@ -17,6 +17,7 @@ int _strlen_recursion(char *s)
 	int a;
 
 	a = _strlen_recursion(s + 1);
+	printf("%d", a);
 
 	return (a);
 }
