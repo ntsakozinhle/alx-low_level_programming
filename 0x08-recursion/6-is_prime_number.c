@@ -12,18 +12,34 @@
 
 int is_prime_number(int n)
 {
-	if (n == 0)
+	if (n <= 0)
 	{
 		return (0);
 	}
 
-	else if (n / n == 1)
+	return (find_prime(n, 2));
+}
+
+/**
+ * find_prime - prototype too find prime numbers
+ *
+ * @n: parameter to check
+ * @div: parameter to check
+ *
+ * Return: 1
+ */
+
+int find_prime(int n, int div)
+{
+	if (div * div > n)
 	{
 		return (1);
 	}
 
-	else
+	if (n % div == 0)
 	{
 		return (0);
 	}
+
+	return (find_prime(n, div + 1));
 }
