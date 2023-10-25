@@ -7,7 +7,7 @@
  *
  * @n: paramater for integer
  *
- * Return: 0
+ * Return: find_prime
  */
 
 int is_prime_number(int n)
@@ -26,7 +26,7 @@ int is_prime_number(int n)
  * @n: parameter to check
  * @div: parameter to check
  *
- * Return: 1
+ * Return: find_prime
  */
 
 int find_prime(int n, int div)
