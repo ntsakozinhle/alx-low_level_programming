@@ -1,2 +1,5 @@
 #!/bin/bash
-ar rc liball.a *.c | gcc -std=gnu89 main.c *.c liball.a -o -L. -lall
+for file in *.c; do
+	gcc -c -std=gnu89 "$file"
+	done
+ar rc liball.a *.o | ranlib liball.a | rm -f *.o
