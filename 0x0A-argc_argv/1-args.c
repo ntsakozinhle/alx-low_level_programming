@@ -27,11 +27,9 @@ int main(int argc, char *argv[])
 			{
 				printf("%d\n", num);
 			}
-			else
-			{
-				printf("%s\n", argv[i]);
-			}
+
 		}
 	}
+
 	return (0);
 }
