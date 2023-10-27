@@ -2,16 +2,16 @@
 #include <stdio.h>
 
 /**
- * _isupper - a function that checks for an upper case character
+ * _isdigit - a function that checks for a digit
  *
  * @c: parameter to be checked
  *
  * Return: 1 and 0
  */
 
-int _isupper(int c)
+int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= '0' && c <= '9')
 		return (1);
 	else
 		return (0);
