@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -c -std=gnu89 *.c | ar rc liball.a *o | gcc -std=gnu89 main.c -o liball.a -L. -lall | rm *.o
+ar rc liball.a *.c | gcc -std=gnu89 main.c *.c liball.a -o -L. -lall
