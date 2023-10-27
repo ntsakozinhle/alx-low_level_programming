@@ -1,7 +1,5 @@
 #include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
 
 /**
  * main - a program should print a number, followed by a
@@ -13,23 +11,9 @@
  * Return: void
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-	int i;
-
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			int num = atoi(argv[i]);
-
-			if (num != 0 || (num == 0 && argv[i][0] == '0'))
-			{
-				printf("%d\n", num);
-			}
-
-		}
-	}
+	printf("%d\n", argc - 1);
 
 	return (0);
 }
