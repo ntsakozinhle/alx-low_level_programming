@@ -1,2 +1,2 @@
 #!/bin/bash
-ar rc liballa.a *.c
+ar rc liballa.a *.o
