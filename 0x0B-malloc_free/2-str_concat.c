@@ -39,7 +39,12 @@ char *str_concat(char *s1, char *s2)
 		output[a] = s1[a];
 
 	for (a = 0; s2[a] != '\0'; a++)
+	{
 		output[s1len] = s2[a];
+		s1len++;
+	}
+
+	output[s1len] = '\0';
 
 	return (output);
 }
