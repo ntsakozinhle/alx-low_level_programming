@@ -20,11 +20,9 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 		s1 = "";
-	return (NULL);
 
 	if (s2 == NULL)
 		s2 = "";
-	return (NULL);
 
 	for (a = 0; s1[a] != '\0'; a++)
 		s1len++;
@@ -41,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 		output[a] = s1[a];
 
 	for (a = 0; s2[a] != '\0'; a++)
-		output[s1len + 1] = s2[a];
+		output[s1len] = s2[a];
 
 	return (output);
 }
