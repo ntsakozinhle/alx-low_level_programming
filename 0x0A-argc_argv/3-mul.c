@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 	int a, b;
 	int len;
 
-	for (a = 1; a < argc; a++)
+	for (a = 0; a < argc; a++)
 	{
 		len = strlen(argv[a]);
 		
