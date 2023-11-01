@@ -27,6 +27,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
+	else
+	{
+		printf("%d\n", result);
+		return (0);
+	}
+
 	for (a = 1; a < argc; a++)
 	{
 		len = strlen(argv[a]);
@@ -40,7 +46,4 @@ int main(int argc, char *argv[])
 			}
 		}
 	}
-
-	printf("%d\n", result);
-	return (0);
 }
