@@ -21,6 +21,20 @@ int main(int argc, char *argv[])
 	int a, b;
 	int len;
 
+	for (a = 1; a < argc; a++)
+	{
+		len = strlen(argv[a]);
+		
+		for (b = 0; b < len; b++)
+		{
+			if (!isdigit(argv[a][b]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
+	}
+
 	if (argc != 3)
 	{
 		printf("Error\n");
@@ -31,19 +45,5 @@ int main(int argc, char *argv[])
 	{
 		printf("%d\n", result);
 		return (0);
-	}
-
-	for (a = 1; a < argc; a++)
-	{
-		len = strlen(argv[a]);
-
-		for (b = 0; b < len; b++)
-		{
-			if (!isdigit(argv[a][b]))
-			{
-				printf("Error\n");
-				return (1);
-			}
-		}
 	}
 }
