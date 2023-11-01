@@ -27,7 +27,8 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
-		if (b == 0 && num == 0)
+		b = 0;
+		num = 0;
 
 		while (argv[a][b] != '\0')
 		{
