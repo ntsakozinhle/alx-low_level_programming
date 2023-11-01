@@ -1,6 +1,8 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 /**
  * main - a program that mutiplies 2 numbers
@@ -16,6 +18,8 @@ int main(int argc, char *argv[])
 	int num1 = atoi(argv[1]);
 	int num2 = atoi(argv[2]);
 	int result = num1 * num2;
+	int a, b;
+	int len;
 
 	if (argc != 3)
 	{
@@ -23,9 +27,20 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	else
+	for (a = 1; a < argc; a++)
 	{
-		printf("%d\n", result);
-		return (0);
+		len = strlen(argv[a]);
+
+		for (b = 0; b < len; b++)
+		{
+			if (!isdigit(argv[a][b]))
+			{
+				printf("Error\n");
+				return (1);
+			}
+		}
 	}
+
+	printf("%d\n", result);
+	return (0);
 }
