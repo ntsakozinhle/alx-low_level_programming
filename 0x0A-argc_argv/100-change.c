@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		return (0);
 	}
 
-	for (b = 0; b < 10; b++)
+	for (b = 0; b < 4; b++)
 	{
 		while (cents >= coins[b])
 		{
