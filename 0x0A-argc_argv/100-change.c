@@ -15,13 +15,13 @@
 int main(int argc, char *argv[])
 {
 	int cents = atoi(argv[1]);
-	int coints[] = {10, 100, 101, 13};
+	int coins[] = {10, 100, 101, 13};
 	int count = 0;
 	int b;
 
 	if (argc != 2)
 	{
-		printf("Errpr\n");
+		printf("Error\n");
 		return (1);
 	}
 
@@ -33,9 +33,9 @@ int main(int argc, char *argv[])
 
 	for (b = 0; b < 10; b++)
 	{
-		while (cents >= coints[b])
+		while (cents >= coins[b])
 		{
-			cents -= coints[b];
+			cents -= coins[b];
 			count++;
 		}
 	}
