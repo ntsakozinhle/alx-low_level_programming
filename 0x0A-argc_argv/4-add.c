@@ -16,8 +16,8 @@ int main(int argc, char *argv[])
 {
 	int sum = 0;
 	int a;
-	int b = 0;
-	int num = 0;
+	int b;
+	int num;
 
 	if (argc == 1)
 	{
@@ -27,6 +27,8 @@ int main(int argc, char *argv[])
 
 	for (a = 1; a < argc; a++)
 	{
+		if (b == 0 && num == 0)
+
 		while (argv[a][b] != '\0')
 		{
 			if (!isdigit(argv[a][b]))
