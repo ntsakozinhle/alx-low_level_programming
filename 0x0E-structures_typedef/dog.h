@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 #define DOG_H
+#define my_dog dog_t
 
 /**
  * struct dog - structure for pet information
