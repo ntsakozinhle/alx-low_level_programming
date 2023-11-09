@@ -30,7 +30,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 		if (a < n - 1)
 		{
-			printf("%d%s", str, separator);
+			printf("%s", separator);
 		}
 	}
 	va_end(args);
