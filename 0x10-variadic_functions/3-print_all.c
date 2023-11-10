@@ -45,9 +45,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (format[b + 1] != '\0' && check_stat == 0)
-		{
 			printf(", ");
-		}
 		b++;
 	}
 	printf("\n");
