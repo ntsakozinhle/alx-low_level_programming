@@ -11,19 +11,19 @@
 
 void print_all(const char * const format, ...)
 {
-	int b, check_stat;
+	int b, check_stat; /* declare variables */
 	char *str;
 	va_list print;
 
-	va_start(print, format);
+	va_start(print, format); /* initialize */
 	b = 0;
 	while (format != NULL && format[b] != '\0')
 	{
 		switch (format[b])
 		{
 			case 'i':
-				printf("%i", va_arg(print, int));
-				check_stat = 0;
+				printf("%d", va_arg(print, int));
+				check_stat = 0; /* check conditions */
 				break;
 			case 'f':
 				printf("%f", va_arg(print, double));
@@ -38,6 +38,7 @@ void print_all(const char * const format, ...)
 				if (str == NULL)
 					str = "(nil)";
 				printf("%s", str);
+				check_stat = 0;
 				break;
 			default:
 				check_stat = 1;
