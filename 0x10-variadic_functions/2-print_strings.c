@@ -15,21 +15,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	unsigned int i;
 	va_list point;
 
-	if (separator == NULL)
-	{
-		printf("(nil)\n");
-		return;
-	}
-
 	va_start(point, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(point, const char *);
+		str = va_arg(point, char *);
 
 		if (str == NULL)
 		{
-			printf("(nil)\n");
+			printf("(nil)");
 		}
 
 		else
