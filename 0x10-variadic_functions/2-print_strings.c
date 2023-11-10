@@ -13,7 +13,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 	const char *str;
 	unsigned int i;
-	va_list args;
+	va_list point;
 
 	if (separator == NULL)
 	{
@@ -21,11 +21,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 	}
 
-	va_start(args, n);
+	va_start(point, n);
 
 	for (i = 0; i < n; i++)
 	{
-		str = va_arg(args, const char *);
+		str = va_arg(point, const char *);
 
 		if (str == NULL)
 		{
@@ -37,13 +37,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", str);
 		}
 
-		if (i < n - 1)
+		if (i != (n - 1) && separator != NULL)
 		{
 			printf("%s", separator);
 		}
 
 	}
-	va_end(args);
-
 	printf("\n");
+	va_end(point);
 }
