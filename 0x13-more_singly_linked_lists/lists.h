@@ -34,6 +34,20 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n);
 int delete_nodeint_at_index(listint_t **head, unsigned int index);
 
 
+/**
+ * struct listd_s - singly linked list
+ * @d: pointer of nodes
+ * @nxt: points to the next node
+ *
+ * Description: singly linked list of pointers
+ */
+typedef struct listd_s
+{
+	void *d;
+	struct listd_s *next;
+} listd_t;
+
+
 listint_t *reverse_listint(listint_t **head);
 size_t print_listint_safe(const listint_t *head);
 size_t free_listint_safe(listint_t **h);
