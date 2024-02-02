@@ -80,15 +80,15 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 
 			new_node->next = current_node;
 			new_node->sprev = prev_node;
-			new_node->snext = NULL;
+			new_node->snext = current_node->snext;
 
 			if (prev_node)
 				prev_node->snext = new_node;
 			else
 				ht->shead = new_node;
 
-			if (current_node)
-				current_node->sprev = new_node;
+			if (current_node->snext)
+				current_node->snext->sprev = new_node;
 			else
 				ht->stail = new_node;
 
