@@ -2,9 +2,9 @@
 
 CC = gcc
 
-CFLAGS = -Wall -Wextra -Werrer -std=c11
+CFLAGS = -Wall -Wextra -Werror -std=c11
 
-SRCS = main.c file1.c file2.c
+SRCS = main.c school.c
 
 OBJS = $(SRCS:.c=.o)
 
