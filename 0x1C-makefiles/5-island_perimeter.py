@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """Define an island perimeter of the measuring function we have."""
 
+
 def island_perimeter(grid):
     """Returns pm of the island.
 
