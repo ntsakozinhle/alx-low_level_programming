@@ -1,0 +1,25 @@
+# Makefile for compiling the 'school' executable
+
+CC = gcc
+
+CFLAGS = -Wall -Wextra -Werrer -std=c11
+
+SRCS = main.c file1.c file2.c
+
+OBJS = $(SRCS:.c=.o)
+
+EXEC = school
+
+all: $(EXEC)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(EXEC): $(OBJS)
+	$(CC) $(OBJS) -o $(EXEC)
+
+# Clean rule
+clean:
+	rm -f $(OBJS) $(EXEC)
+
+.PHONY: all clean
