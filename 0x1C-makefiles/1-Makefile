@@ -2,7 +2,7 @@ CC := gcc
 SRC := main.c school.c
 
 school: $(SRC)
-	$(CC) $(SRC) -o school
+	$(CC) $^ -o $@
 
 .PHONY: all
 all: school
